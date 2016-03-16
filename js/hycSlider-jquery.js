@@ -132,7 +132,6 @@
 		//左右箭头点击分别移动到前一张或后一张
 		var clickSlider = function(){
 			var $slider_btn  	= $("#"+prefix_name+"_clickBtnSwap");
-			//var $circle_item = $("#"+prefix_name+"_circleSwap li.circle");
 			$slider_btn.find("#next").click(function(){
 				showNext();				
 			});

@@ -290,7 +290,6 @@ var hycSlide = function(options){
 				}else{
 					paras[key] = options[key];
 				}
-				//paras[key] = options[key] ? options[key] : defaultPara[key];
 			}
 		}();
 		
