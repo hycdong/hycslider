@@ -138,11 +138,8 @@ var hycSlide = function(options){
 			
 			//设置元素透明度
 			var setOpacity = function(element, opacity){
-				if(document.all){	//判断是否是IE浏览器
 					element.style.filter = "alpha(opacity:"+opacity+")";
-				}else{
 					element.style.opacity = opacity/100;
-				}
 			};
 			
 			//初始化要显示的图片的透明度，并将其修改为可见
@@ -288,7 +285,12 @@ var hycSlide = function(options){
 			var paraLength = defaultPara.length;
 			options = options || [];
 			for(var key in defaultPara){
-				paras[key] = options[key] ? options[key] : defaultPara[key];
+				if(options[key] == undefined){
+					paras[key] = defaultPara[key];
+				}else{
+					paras[key] = options[key];
+				}
+				//paras[key] = options[key] ? options[key] : defaultPara[key];
 			}
 		}();
 		

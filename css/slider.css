@@ -18,7 +18,7 @@
 	position:absolute;
 	width:60px;
 	height:33px;
-	background:url(../img/slider-arrow2.png) no-repeat;				
+	background:url(../img/slider-arrow.png) no-repeat;				
 }
 .sliderContainer .clickBtnSwap .click_icon:hover{
 	cursor:pointer;

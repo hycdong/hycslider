@@ -22,26 +22,31 @@
 		
 		<div class="sliderContainer">
 			<div id="test">
-				<ul class="items">
+				<div class="items">
 					<li><a><img src="img/1.jpg" alt="测试图片1"></a></li>
 					<li><a><img src="img/2.jpg" alt="测试图片2"></a></li>
 					<li><a><img src="img/3.jpg" alt="测试图片3"></a></li>
-				</ul>
+				</div>
 			</div>
 		</div>
 		
 		<script type="text/javascript" src="js/hycSlider-js.js"></script>
-		<!--<script type="text/javascript" src="js/backup.js"></script>-->
 		<script type="text/javascript">
 			hycSlide({
 				startIndex		: 1,
-				animationType	:	"fade"
+				animationType	:	"fade",
+				autoPlay			: false,		
+				isClickHidden	: false
 			});
 			
 			hycSlide({
-				swapCell		: "test",
+				swapCell			: "test",
+				listCell			: "div",
 				width					: 320,
-				duration			:	2
+				duration			:	2,
+				delay					:	1,
+				startIndex		: 10,
+				isCircleHidden:	false
 			});
 		</script>
 	</body>
