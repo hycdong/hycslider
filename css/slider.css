@@ -1,0 +1,54 @@
+/* Author     : hyc
+ * Create time: 2016.03.12
+ * Last modify: 2016.03.14
+*/
+#sliderSwap, #test{
+	position:relative;
+	overflow:hidden;
+}
+#sliderSwap .items, #test .items{
+	float:left;
+	position:absolute;
+	overflow:hidden;
+}
+#sliderSwap li, #test li{				
+	float:left;
+}
+.sliderContainer .clickBtnSwap .click_icon{
+	position:absolute;
+	width:60px;
+	height:33px;
+	background:url(../img/slider-arrow2.png) no-repeat;				
+}
+.sliderContainer .clickBtnSwap .click_icon:hover{
+	cursor:pointer;
+}
+.sliderContainer .clickBtnSwap #prev, .sliderContainer .clickBtnSwap .prev{
+	top:0;
+	left:0;
+	background-position:-120px 0;
+}
+.sliderContainer .clickBtnSwap #next, .sliderContainer .clickBtnSwap .next{
+	top:0;
+	right:0;
+	background-position:0 0;
+}
+.sliderContainer .circleSwap{
+	position:absolute;
+	bottom:10%;
+	left:0;
+}
+.sliderContainer .circleSwap li{
+	display:inline-block;
+	zoom:1;
+	margin-right:20px;
+	width:8px;
+	height:8px;
+	line-height:99px;
+	overflow:hidden;
+	background:url(../img/slider-btn.png) 0 -10px no-repeat;
+	cursor:pointer;
+}
+.sliderContainer .circleSwap li.current{
+	background-position:0 0;
+}

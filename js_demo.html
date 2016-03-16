@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="hyc">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>js的轮播图示例代码</title>
+		<link type="text/css" rel="stylesheet" href="css/reset.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slider.css"/>
+	</head>
+	<body>
+		<div class="sliderContainer">
+			<div id="sliderSwap">
+				<ul id="sliderList" class="items">
+					<li><a><img src="img/1.jpg" alt="测试图片1"></a></li>
+					<li class="skdjhfa"><a><img src="img/2.jpg" alt="测试图片2"></a></li>
+					<li><a><img src="img/3.jpg" alt="测试图片3"></a></li>
+					<li><a><img src="img/4.jpg" alt="测试图片4"></a></li>
+					<li><a><img src="img/5.jpg" alt="测试图片5"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="sliderContainer">
+			<div id="test">
+				<ul class="items">
+					<li><a><img src="img/1.jpg" alt="测试图片1"></a></li>
+					<li><a><img src="img/2.jpg" alt="测试图片2"></a></li>
+					<li><a><img src="img/3.jpg" alt="测试图片3"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/hycSlider-js.js"></script>
+		<!--<script type="text/javascript" src="js/backup.js"></script>-->
+		<script type="text/javascript">
+			hycSlide({
+				startIndex		: 1,
+				animationType	:	"fade"
+			});
+			
+			hycSlide({
+				swapCell		: "test",
+				width					: 320,
+				duration			:	2
+			});
+		</script>
+	</body>
+</html>
